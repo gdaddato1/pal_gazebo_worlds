@@ -1,0 +1,59 @@
+<sdf version="1.6">
+  <world name="default">
+
+    <!-- luce -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- pavimento -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- ACTOR umano -->
+    <actor name="human">
+      <pose>0 0 0 0 0 0</pose>
+
+      <skin>
+        <filename>model://actor/meshes/walking.dae</filename>
+        <scale>1.0</scale>
+      </skin>
+
+     <animation name="walk">
+    <filename>model://actor/meshes/walking.dae</filename>
+    <interpolate_x>true</interpolate_x>
+  </animation>
+
+  <link name="link">
+    <collision name="collision">
+      <geometry>
+        <cylinder>
+          <radius>0.3</radius>
+          <length>1.7</length>
+        </cylinder>
+      </geometry>
+    </collision>
+  </link>
+
+  <script>
+    <loop>true</loop>
+    <trajectory id="0" type="walk">
+      <waypoint>
+        <time>0</time>
+        <pose>0 0 0 0 0 0</pose>
+      </waypoint>
+      <waypoint>
+        <time>10</time>
+        <pose>5 0 0 0 0 0</pose>
+      </waypoint>
+      <waypoint>
+        <time>20</time>
+        <pose>5 5 0 0 0 1.57</pose>
+      </waypoint>
+    </trajectory>
+  </script>
+</actor>
+
+  </world>
+</sdf>

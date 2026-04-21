@@ -17,7 +17,7 @@
          <animation name="walking">
             <filename>file://media/models/walk.dae</filename>
             <scale>1.000000</scale>
-            <interpolate_x>true</interpolate_x>
+            <interpolate_x>false</interpolate_x>
          </animation>
          <script>
             <loop>false</loop>
@@ -26,11 +26,11 @@
             <trajectory id="0" type="walking">
                <waypoint>
                   <time>0.000000</time>
-                  <pose>2.000000 0.000000 0.000000 0.000000 0.000000 3.141593</pose>
+                  <pose>4.000000 0.000000 0.000000 0.000000 0.000000 3.141593</pose>
                </waypoint>
                <waypoint>
                   <time>5.000000</time>
-                  <pose>1.000000 0.000000 0.000000 0.000000 0.000000 3.141593</pose>
+                  <pose>2.000000 0.000000 0.000000 0.000000 0.000000 3.141593</pose>
                </waypoint>
                <waypoint>
                   <time>10.000000</time>

@@ -26,23 +26,52 @@
             <trajectory id="0" type="walking">
                <waypoint>
                   <time>0.000000</time>
-                  <pose>8.000000 0.000000 0.000000 0.000000 0.000000 3.141593</pose>
-               </waypoint>
-               <waypoint>
-                  <time>3.000000</time>
-                  <pose>6.000000 0.800000 0.000000 0.000000 0.000000 -2.944197</pose>
-               </waypoint>
-               <waypoint>
-                  <time>7.000000</time>
-                  <pose>3.600000 1.760000 0.000000 0.000000 0.000000 -2.761086</pose>
+                  <pose>8.000000 0.000000 0.000000 0.000000 0.000000 -2.353468</pose>
                </waypoint>
                <waypoint>
                   <time>10.000000</time>
-                  <pose>0.000000 0.000000 0.000000 0.000000 0.000000 -2.761086</pose>
+                  <pose>7.695518 -0.306147 0.000000 0.000000 0.000000 -2.691764</pose>
+               </waypoint>
+               <waypoint>
+                  <time>20.000000</time>
+                  <pose>6.828427 -0.565686 0.000000 0.000000 0.000000 -2.944197</pose>
+               </waypoint>
+               <waypoint>
+                  <time>29.000000</time>
+                  <pose>5.530734 -0.739104 0.000000 0.000000 0.000000 -3.058939</pose>
+               </waypoint>
+               <waypoint>
+                  <time>36.500000</time>
+                  <pose>4.000000 -0.800000 0.000000 0.000000 0.000000 3.141593</pose>
+               </waypoint>
+               <waypoint>
+                  <time>44.000000</time>
+                  <pose>2.469266 -0.739104 0.000000 0.000000 0.000000 3.058939</pose>
+               </waypoint>
+               <waypoint>
+                  <time>56.000000</time>
+                  <pose>1.171573 -0.565686 0.000000 0.000000 0.000000 2.944197</pose>
+               </waypoint>
+               <waypoint>
+                  <time>68.000000</time>
+                  <pose>0.304482 -0.306147 0.000000 0.000000 0.000000 2.691764</pose>
+               </waypoint>
+               <waypoint>
+                  <time>80.000000</time>
+                  <pose>0.000000 0.000000 0.000000 0.000000 0.000000 2.353468</pose>
                </waypoint>
 
             </trajectory>
          </script>
       </actor>
+
+      <gui>
+         <camera name="user_camera">
+            <!-- Top-down view centered on the Y axis (x=0) and near the actor arc -->
+            <pose>0.0 -1.0 16.0 0.0 1.35 1.57</pose>
+            <view_controller>orbit</view_controller>
+         </camera>
+      </gui>
+      
    </world>
 </sdf>
